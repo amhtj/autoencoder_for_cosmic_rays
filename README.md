@@ -1,6 +1,6 @@
 # Reconstruction of sub-threshold events of cosmic-ray radio detectors using an autoencoder
 
-1. converter.py
+converter.py
 
 Used for convert from ADST to numpy binary format.
 
@@ -13,7 +13,8 @@ Arguments:
 Output: 2 numpy files
 
 
-2. creator.py
+creator.py
+
 Used for creation of training or test sets or change vectors dimension for neural network. Use "upsampling" for create dataset with augmentation.
 
 Arguments:
@@ -24,22 +25,28 @@ Arguments:
  
 Output: 2 numpy files
 
-4. denoiser.py
-Used for denoising input file.
-arguments
---noise: noised signals
---result: output file
---model: model for denoising
-output: 1 numpy file
+denoiser.py
 
-5. estimator.py
+Used for denoising input file.
+
+Arguments:
+* noise: noised signals
+* result: output file
+* model: model for denoising
+
+Output: 1 numpy file
+
+estimator.py
+
 Creates .csv table which summarizing result.
-arguments
---true: true signals
---reco: reco signals
---upsampling: upsampling for transfer count to ns
---mode: snr or simple
-output: 1 csv file
+
+Arguments:
+* true: true signals
+* reco: reco signals
+* upsampling: upsampling for transfer count to ns
+* mode: snr or simple
+
+Output: 1 csv file
 
 Simple create CNN pipeline:
 1. Download prepared dataset from Google Drive:
