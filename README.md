@@ -1,6 +1,7 @@
 # Reconstruction of sub-threshold events of cosmic-ray radio detectors using an autoencoder
 
 1. converter.py
+
 Used for convert from ADST to numpy binary format.
 
 Arguments: 
@@ -13,14 +14,15 @@ Output: 2 numpy files
 
 
 2. creator.py
-Used for creation of training or test sets or change vectors dimension for neural network.
-Use "upsampling" for create dataset with augmentation.
-arguments
---signal: signals
---noise: noised signals
---center: approximate peak position
---window: size of output numpy array
-output: 2 numpy files
+Used for creation of training or test sets or change vectors dimension for neural network. Use "upsampling" for create dataset with augmentation.
+
+Arguments:
+* signal: signals
+* noise: noised signals
+* center: approximate peak position
+* window: size of output numpy array
+ 
+Output: 2 numpy files
 
 4. denoiser.py
 Used for denoising input file.
