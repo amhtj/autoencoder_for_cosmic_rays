@@ -2,9 +2,12 @@
 
 1. converter.py
 Used for convert from ADST to numpy binary format.
-arguments
+arguments: 
+
 -- signal: signal file
+
 -- noise: noised signal file
+
 output: 2 numpy files
 
 
